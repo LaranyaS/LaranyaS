@@ -1,21 +1,32 @@
-# 🎮 Guess It!!! – Word Guessing Game  
+# 👋 Hi, I'm Laranya Singh  
 
-**Guess It!!!** is a fun, text-based word guessing game (similar to Hangman) built with Python.  
-The computer randomly selects a word, and the player has to guess it one letter at a time before running out of attempts.  
+💻 Computer Science student | 🌱 Lifelong Learner | 🚀 Open to Collaboration  
 
----
-
-## 🚀 Features
-- Randomly selects words from a dictionary (via `nltk`).  
-- Tracks guessed letters and remaining attempts.  
-- Provides feedback for correct ✅ and incorrect ❌ guesses.  
-- Win/lose conditions with a final message.  
+I enjoy building projects that make life easier and help me grow as a developer. Currently, I’m focusing on **full-stack development** and exploring practical coding projects.  
 
 ---
 
-## 🛠️ Tech Stack
-- **Language:** Python 3  
-- **Libraries:**  
-  - `random` – for random word selection  
-  - `nltk` – for English word dataset  
+## 🔭 What I’m Working On
+- Web development projects (Python, Django, React)  
+- Personal apps like a **Budget Tracker** and a **Life Dashboard**  
+- Expanding my skills in backend + frontend development  
 
+---
+
+## 🤝 Open to Collaboration
+I’m always open to collaborating on:  
+- 🚀 Web development projects  
+- 🤖 Beginner-friendly AI/ML apps  
+- 📊 Useful everyday tools and productivity apps  
+
+If you have an idea and need a teammate, feel free to reach out!  
+
+---
+
+## 🌐 Connect with Me
+- 📧 Email: laranyasingh63@gmail.com 
+- 💼 LinkedIn: www.linkedin.com/in/laranya-singh-631b09220 
+
+---
+
+⭐️ *Check out my repositories and let’s build something together!*  
