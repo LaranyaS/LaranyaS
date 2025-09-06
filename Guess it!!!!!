@@ -1,0 +1,72 @@
+# Import Python's built-in random library (for picking random words)
+import random
+
+# Import nltk (Natural Language Toolkit) for accessing a big list of words
+import nltk
+nltk.download("words")  # Download the word list (only needed the first time you run this)
+
+# Import the actual words corpus from nltk
+from nltk.corpus import words
+
+
+def word_guessing_game():
+    """
+    Word Guessing Game (like Hangman but simpler).
+    The computer picks a random word, and the player tries to guess it.
+    """
+
+    # Pick a random word from nltk's word list (ignore very short words)
+    secret_word = random.choice([w for w in words.words() if len(w) > 3]).lower()
+
+    # Keep track of letters the player has guessed
+    guessed_letters = set()
+
+    # Number of wrong attempts allowed
+    attempts = 6
+
+    print("🎮 Welcome to the Guess it!!!")
+    print("Try to guess the word, one letter at a time.")
+
+    # Main game loop → runs until attempts are 0 or player guesses the word
+    while attempts > 0:
+        # Show the word with guessed letters revealed, others as underscores
+        display_word = "".join([letter if letter in guessed_letters else "_" for letter in secret_word])
+        print("\nWord:", display_word)
+        print("Attempts left:", attempts)
+
+        # Check if player has guessed the full word
+        if "_" not in display_word:
+            print("🎉 Congratulations! You guessed the word:", secret_word)
+            break
+
+        # Ask the player for a guess
+        guess = input("Enter a letter: ").lower()
+
+        # Validate input → must be a single alphabet letter
+        if len(guess) != 1 or not guess.isalpha():
+            print("⚠️ Please enter a single letter.")
+            continue
+
+        # Prevent duplicate guesses
+        if guess in guessed_letters:
+            print("❌ You already guessed that letter.")
+            continue
+
+        # Add guess to the set of guessed letters
+        guessed_letters.add(guess)
+
+        # Check if guess is in the secret word
+        if guess not in secret_word:
+            print("❌ Wrong guess!")
+            attempts -= 1  # Lose one attempt
+        else:
+            print("✅ Good guess!")
+
+    # If the loop ends because attempts hit 0, player loses
+    if attempts == 0:
+        print("\n💀 Game Over! The word was:", secret_word)
+
+
+# Run the game when the file is executed
+word_guessing_game()
+
