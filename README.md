@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Laranya Singh  
 
-💻 Computer Science student | 🌱 Lifelong Learner | 🚀 Open to Collaboration  
+💻 Computer Science student |  🚀 Open to Collaboration  
 
 I enjoy building projects that make life easier and help me grow as a developer. Currently, I’m focusing on **full-stack development** and exploring practical coding projects.  
 
